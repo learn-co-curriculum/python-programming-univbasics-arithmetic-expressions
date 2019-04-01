@@ -22,11 +22,9 @@ and their corresponding _operations_ that were familiar from basic arithmetic:
 |--------|---------|----|
 | `+` | Addition ||
 | `-` | Subtraction ||
-| `*` | Multiplication | We use `*` instead of `×` because it looks like
-`x`-the-letter|
+| `*` | Multiplication | We use `*` instead of `×` because it looks like `x`-the-letter|
 | `/` | Division | We use `/` instead of `÷` because that's not on a keyboard|
-| `**` | Exponentiation | We use `**` instead of `^` because that means
-something else in programming languages|
+| `**` | Exponentiation | We use `**` instead of `^` because that means something else in programming languages|
 | `()` | Association | Expressions inside of `()` get evaluated earlier|
 
 When we learned about these _operators_ and their part in _expressions_, we
@@ -64,6 +62,7 @@ x + y #=> ???
 ```
 
 |Expression|Action|
+|----------|------|
 | `x + y`  | Variable lookup: `x`, resolves to `5`|
 | `5 + y`  | Variable lookup: `y`, resolves to `1`|
 | `5 + 1`  | Two constant, scalar, `Integer`s; apply `+` operation|
