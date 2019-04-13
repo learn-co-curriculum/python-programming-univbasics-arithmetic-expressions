@@ -11,7 +11,7 @@
 * Demonstrate the multiplication operator
 * Recognize `/` as the symbol for division
 * Demonstrate the division operator
-* Identify how division in Ruby differs from normal division
+* Identify how division in Python differs from normal division
 
 ## Introduction
 
@@ -37,7 +37,7 @@ _expressions_ yet. We knew how _operators_ worked with _constant expressions_:
 In this section we're going to trace this expression of "variables" until we
 get a return value. Consider:
 
-```ruby
+```Python
 x = 5
 y = 1
 x + y #=> ???
@@ -49,7 +49,7 @@ We know how to handle the first two lines: these are simple uses of the
 _assignment expression_ which assigns two _scalar values_, `Integer` values to
 the variables `x` and `y`:
 
-```ruby
+```Python
 x = 5
 y = 1
 ```
@@ -57,7 +57,7 @@ y = 1
 Let's consider what happens in the last expression, step-by-step
 
 
-```ruby
+```Python
 x + y #=> ???
 ```
 
@@ -71,7 +71,7 @@ x + y #=> ???
 Similar logic follows for all of the basic arithmetic operators. While our
 examples will use simple expressions with _operators_ and _values_ you should
 try setting the numbers to _variables_ and enjoy experimenting in your
-conversation with Ruby.
+conversation with Python.
 
 ## Recognize `+` as the Symbol for Addition
 
@@ -80,15 +80,15 @@ operation is (`+`).
 
 ## Demonstrate the Addition Operator
 
-To get a feel for performing addition operations in Ruby, let's experiment. Open
-up IRB by opening your terminal; type `irb` and hit enter and type the commands
+To get a feel for performing addition operations in Python, let's experiment. Open
+up the Python interpreter by opening your terminal; type `the Python interpreter` and hit enter and type the commands
 below:
 
-```ruby
+```Python
 10 + 1 #=> 11
 ```
 
-```ruby
+```Python
 5 + -1 #=> 4
 ```
 
@@ -99,15 +99,15 @@ arithmetic.
 
 ## Demonstrate the Subtraction Operator
 
-Let's experiment again. Open IRB and type these commands below:
+Let's experiment again. Open the Python interpreter and type these commands below:
 
-```ruby
+```Python
 4 - 13 #=> -9
 ```
 
 And don't forget that losing negative things is a positive!
 
-```ruby
+```Python
 11 - -11 #=> 22
 ```
 
@@ -118,13 +118,13 @@ letter `x`.
 
 ## Demonstrate the Multiplication Operator
 
-Use IRB and try typing the following the multiplication commands:
+Use the Python interpreter and try typing the following the multiplication commands:
 
-```ruby
+```Python
 10 * 10 #=> 100
 ```
 
-```ruby
+```Python
 11 * -11 #=> -121
 ```
 
@@ -137,62 +137,32 @@ Nothing out of the ordinary, right?
 The symbol for the division (`/`) is a forward slash. There's no handy `÷`
 character on most keyboards, so programmers adopted `/`.
 
-***Division behaves differently in Ruby than you might expect***
-
-Pay attention as we demonstrate it.
-
 ## Demonstrate the Division Operator
 
-Open up IRB and try typing the following the division commands:
+Open up the Python interpreter and try typing the following the division commands:
 
-```ruby
-8 / 3 #=> 2
+```Python
+20 / 2 #=> 10.0
+```
+```Python
+8 / 3 #=> 2.6666666666666665
 ```
 
-```ruby
-4 / 13  #=> 0
+```Python
+4.0 / 13  #=> 0.3076923076923077
 ```
 
-That's surprising! Just like in real life conversation, you can _express_
-something that seems entirely innocent and get something very surprising back!
-Maybe someone gets angry or becomes very sad. _Empathy_ is what lets us
-recognize that something different is afoot with the person we're speaking to.
-Let's try some _empathy_ with Ruby to understand why the _return values_ were
-so surprising.
-
-## Identify how division in Ruby differs from normal division
-
-Now we just saw something a little bit strange, and it's related to "data
-type," which we just learned about.
-
-In Ruby, and most programming languages, numbers can be `Integer`s (whole
-numbers), or `Float`s (decimal numbers). When you divide `Integers` by one
-another, Ruby doesn't want to upset you by returning a non-`Integer`, it thinks
-you're a "big picture" kinda thinker &mdash; "just stuff to the left of the
-decimal, please."
-
-It's a spot where our communication with Ruby can go wrong!
-
-By the same reasoning as above, if _one_ of the numbers in the expression were
-a `Float`, Ruby would get the hint that we want a precise answer, and it would
-respond correctly.
-
-```ruby
-9.0 / 2 #=> 4.5
-```
-
-Take those "surprising" results from the previous section, make one, the other,
-or both `Float`s and verify that you're back to conversing with Ruby as you'd
-expect, using IRB.
+Notice that we're using `Integer`s for division here, but we will **always**
+get back a `Float`.
 
 ## Conclusion
 
 Wow that was amazing! We took three lessons to learn three expressions, but in
-this lesson we added 4 more! We can now use IRB as a calculator &mdash; many
-programmers keep IRB open when doing some mathematics...or when splitting the
-bill for a lunch order.
+this lesson we added 4 more! We can now use the Python interpreter as a
+calculator &mdash; many programmers keep the Python interpreter open when doing
+some mathematics...or when splitting the bill for a lunch order.
 
-Amazingly, our ability to "converse" with Ruby is on or about 2nd grade in the
+Amazingly, our ability to "converse" with Python is on or about 2nd grade in the
 US education system (7 years of age). We went from conversational "babies" to
 basic school-children in 2 lessons! We're about to take another multi-year leap
 by learning to be formal about logic: something that most humans don't get
